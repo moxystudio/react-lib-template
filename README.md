@@ -9,7 +9,7 @@ This template already includes a `src` folder, with 2 dummy files ready for you 
 
 In order to help make proper use of this template, here's a quick checklist with some crucial stuff to have in mind:
 
-- Remeber to change `package.json` name, description, keywords, etc.
+- Remember to change `package.json` name, description, keywords, etc.
 - Review the dependencies, removing the unnecessary ones.
 - Just to stress this out again: add unit tests and check for a good coverage. The closest to 100%, the better.
 - Make sure to update the `README`, documenting the features of your component as best as possible.
