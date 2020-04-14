@@ -1,7 +1,7 @@
 {
   "name": "@moxy/react-lib-template",
   "version": "0.0.0",
-  "description": "An orchestrator that eases out the implementation of page transitions",
+  "description": "A template that aims to make the implementation of React component packages easier and more methodic.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -12,11 +12,7 @@
   "author": "Rui Monteiro <rui.monteiro@moxy.studio>",
   "license": "MIT",
   "keywords": [
-    "react",
-    "page",
-    "animation",
-    "transition",
-    "orchestrator"
+    "template"
   ],
   "repository": {
     "type": "git",
