@@ -22,8 +22,8 @@
     "url": "https://github.com/moxystudio/react-lib-template/issues"
   },
   "scripts": {
-    "build:commonjs": "BABEL_ENV=commonjs babel src -d lib --delete-dir-on-start",
-    "build:es": "BABEL_ENV=es babel src -d es --delete-dir-on-start",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib --delete-dir-on-start",
+    "build:es": "cross-env BABEL_ENV=es babel src -d es --delete-dir-on-start",
     "build": "npm run build:commonjs && npm run build:es",
     "test": "jest",
     "lint": "eslint --ignore-path .gitignore .",
@@ -50,6 +50,7 @@
     "@moxy/jest-config": "^4.0.1",
     "@testing-library/react": "^10.0.2",
     "commitlint": "^8.3.5",
+    "cross-env": "^7.0.2",
     "eslint": "^6.0.0",
     "husky": "^4.0.10",
     "jest": "^25.2.6",
