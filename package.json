@@ -23,7 +23,6 @@
     "url": "https://github.com/moxystudio/react-lib-template/issues"
   },
   "scripts": {
-    "build:css": "postcss src/**/*.css -o dist/styles.css",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib --delete-dir-on-start",
     "build:es": "cross-env BABEL_ENV=es babel src -d es --delete-dir-on-start",
     "build": "npm run build:commonjs && npm run build:es",
@@ -59,9 +58,6 @@
     "husky": "^4.0.10",
     "jest": "^25.2.6",
     "lint-staged": "^10.0.2",
-    "postcss": "^7.0.27",
-    "postcss-cli": "^7.1.0",
-    "postcss-modules": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "standard-version": "^7.0.0"

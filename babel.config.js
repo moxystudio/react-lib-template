@@ -2,15 +2,7 @@
 
 const moxy = require('@moxy/postcss-preset')();
 
-// const config = {
-//     plugins: {
-//         ...moxy.plugins,
-//         [require.resolve('postcss-modules')]: {
-//             generateScopedName: 'rlt_[name]_[local]',
-//             getJSON: () => {}, // Disable exported JSON file
-//         },
-//     },
-// };
+const plugins = Object.entries(moxy.plugins).map(([path, options]) => () => require(path)(options));
 
 module.exports = (api) => {
     api.cache(true);
@@ -22,9 +14,7 @@ module.exports = (api) => {
         ],
         plugins: [
             ['css-modules-transform', {
-                prepend: [() => ({
-                    plugins: Object.entries(moxy.plugins),
-                })],
+                prepend: [...plugins],
                 extractCss: './dist/styles.css',
                 generateScopedName: 'rlt_[name]_[local]',
             }],
