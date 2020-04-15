@@ -1,0 +1,7 @@
+.container {
+    background-color: red;
+
+    &::after {
+        background-color: pink;
+    }
+}
