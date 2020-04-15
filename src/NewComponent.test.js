@@ -2,12 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import NewComponent from './NewComponent';
 
-it('should render no layout', () => {
-    const wrapper = render(
+it('should render the component properly', () => {
+    const { getByText } = render(
         <NewComponent>
             <span>Hello</span>
         </NewComponent>,
     );
 
-    expect(wrapper).toMatchSnapshot();
+    expect(getByText('Hello')).toBeInTheDocument();
 });
