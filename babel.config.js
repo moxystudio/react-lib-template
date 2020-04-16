@@ -1,9 +1,5 @@
 'use strict';
 
-const moxy = require('@moxy/postcss-preset')();
-
-const plugins = Object.entries(moxy.plugins).map(([path, options]) => () => require(path)(options));
-
 module.exports = (api) => {
     api.cache(true);
 
@@ -13,11 +9,7 @@ module.exports = (api) => {
             ['@moxy/babel-preset/lib', { react: true }],
         ],
         plugins: [
-            ['css-modules-transform', {
-                prepend: [...plugins],
-                extractCss: './dist/styles.css',
-                generateScopedName: 'rlt_[name]_[local]',
-            }],
+            'transform-postcss',
         ],
     };
 };
