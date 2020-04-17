@@ -6,7 +6,8 @@
   "module": "es/index.js",
   "files": [
     "lib",
-    "es"
+    "es",
+    "dist"
   ],
   "homepage": "https://github.com/moxystudio/react-lib-template#readme",
   "author": "Rui Monteiro <rui.monteiro@moxy.studio>",
@@ -22,9 +23,10 @@
     "url": "https://github.com/moxystudio/react-lib-template/issues"
   },
   "scripts": {
+    "build:css": "rimraf dist && postcss src/styles/**/*.css --base src/styles --dir dist",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib --delete-dir-on-start",
     "build:es": "cross-env BABEL_ENV=es babel src -d es --delete-dir-on-start",
-    "build": "npm run build:commonjs && npm run build:es",
+    "build": "npm run build:commonjs && npm run build:es && npm run build:css",
     "test": "jest",
     "lint": "eslint --ignore-path .gitignore .",
     "prerelease": "npm t && npm run lint && npm run build",
@@ -36,6 +38,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
@@ -48,6 +51,7 @@
     "@moxy/eslint-config-jest": "^12.0.0",
     "@moxy/eslint-config-react": "^12.0.0",
     "@moxy/jest-config": "^4.0.1",
+    "@moxy/postcss-preset": "^4.4.2",
     "@testing-library/react": "^10.0.2",
     "commitlint": "^8.3.5",
     "cross-env": "^7.0.2",
@@ -55,8 +59,10 @@
     "husky": "^4.0.10",
     "jest": "^25.2.6",
     "lint-staged": "^10.0.2",
+    "postcss-cli": "^7.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "rimraf": "^3.0.2",
     "standard-version": "^7.0.0"
   }
 }

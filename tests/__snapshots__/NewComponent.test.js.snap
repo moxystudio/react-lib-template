@@ -2,7 +2,9 @@
 
 exports[`NewComponent Component should render correctly with different children 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="next-lib-template_container"
+  >
     <span>
       Foo Bar
     </span>
