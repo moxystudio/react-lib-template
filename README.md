@@ -61,6 +61,23 @@ $ npm test
 $ npm test -- --watch # during development
 ```
 
+## Demo
+
+A demo [Next.js](https://nextjs.org/) project is available in the [`/demo`](./demo) folder so you can try out this component.
+
+First, build the `{package-name}` project with:
+
+```sh
+$ npm run build
+```
+
+To run the demo, do the following inside the demo's folder:
+
+```sh
+$ npm i
+$ npm run dev
+```
+
 ## License
 
 Released under the [MIT License](https://www.opensource.org/licenses/mit-license.php).
