@@ -19,7 +19,7 @@
 [david-dm-dev-url]:https://david-dm.org/moxystudio/{package-name}?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/moxystudio/{package-name}.svg
 
-{package-drescription}
+{package-description}
 
 ## Installation
 
@@ -77,6 +77,8 @@ To run the demo, do the following inside the demo's folder:
 $ npm i
 $ npm run dev
 ```
+
+*Note: Everytime a change is made to the package a rebuild is required to reflect those changes on the demo.*
 
 ## License
 

@@ -63,7 +63,7 @@ If your package doesn't need any styling, you can trim it down to disable css su
 2. Delete `src/styles` folder.
 3. Remove `npm run build:css` from the `"build"` script in `package.json`.
 4. Remove `postcss-cli` from the dev dependencies list in `package.json`.
-4. Remove all imported css from the demo `/pages/_app.js`.
+5. Remove all imported css from the demo `/pages/_app.js`.
 
 ## DOD Checklist
 
