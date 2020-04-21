@@ -19,7 +19,7 @@
 [david-dm-dev-url]:https://david-dm.org/moxystudio/{package-name}?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/moxystudio/{package-name}.svg
 
-{package-drescription}
+{package-description}
 
 ## Installation
 
@@ -60,6 +60,25 @@ The `{package-api-prop-example}` has the following shape:
 $ npm test
 $ npm test -- --watch # during development
 ```
+
+## Demo
+
+A demo [Next.js](https://nextjs.org/) project is available in the [`/demo`](./demo) folder so you can try out this component.
+
+First, build the `{package-name}` project with:
+
+```sh
+$ npm run build
+```
+
+To run the demo, do the following inside the demo's folder:
+
+```sh
+$ npm i
+$ npm run dev
+```
+
+*Note: Everytime a change is made to the package a rebuild is required to reflect those changes on the demo.*
 
 ## License
 

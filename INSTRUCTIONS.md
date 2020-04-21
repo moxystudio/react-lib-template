@@ -48,12 +48,12 @@ An example with a package named `react-foo`:
 > To import a stylesheet, one can import it on the project's entry CSS file:
 > ```css
 > /* src/index.css */
-> @import "@moxy/react-foo/styles";
+> @import "@moxy/react-foo/dist/index.css";
 > ```
 > ...or in the project's entry JavaScript file:
 > ```js
 > /* src/index.js */
-> import "@moxy/react-foo/styles/index.css";
+> import "@moxy/react-foo/dist/index.css";
 > ```
 
 ### Without CSS
@@ -62,8 +62,8 @@ If your package doesn't need any styling, you can trim it down to disable css su
 1. Delete `postcss.config.js` file.
 2. Delete `src/styles` folder.
 3. Remove `npm run build:css` from the `"build"` script in `package.json`.
-4. Remove `postcss-cli` from the dev dependencies list in `package.json`. 
-4. Remove all imported css from the demo `/pages/_app.js`.
+4. Remove `postcss-cli` from the dev dependencies list in `package.json`.
+5. Remove all imported css from the demo `/pages/_app.js`.
 
 ## DOD Checklist
 
