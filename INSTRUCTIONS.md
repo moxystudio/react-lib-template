@@ -13,12 +13,15 @@ This template already includes a `src` folder, with 2 dummy files ready for you 
 There is a [Next.js](https://nextjs.org/) project available inside the `/demo` folder. This is useful for you to manually test your package before releasing it.
 
 To gain access to your package as if it already was a `node_module`, please update the demo's `package.json` and create a symlink:
+
 ```json
 "dependencies": {
     "{name-of-package}": "file:..",
 }
 ```
+
 To run the demo, just do the following inside the demo's folder:
+
 ```cmd
 $ npm i
 $ npm run dev
@@ -30,6 +33,7 @@ This package already has css configuration enabled. We are currently using [@mox
 
 Your stylesheets should be placed inside `src/styles` and you must use a good naming convention to avoid collisions with other project's styles. We suggest that you use the package name as a prefix.
 Here is an example to a package named `react-foo`:
+
 ```css
 .react-foo_container {
     background-color: black;

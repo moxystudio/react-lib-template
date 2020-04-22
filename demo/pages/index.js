@@ -4,7 +4,7 @@ import NewComponent from '@moxy/react-lib-template';
 import styles from './index.module.css';
 
 const Home = () => (
-    <div>
+    <div className={ styles.home }>
         <h1>react-lib-template</h1>
         <NewComponent className={ styles.newComponent }>Hello World</NewComponent>
     </div>

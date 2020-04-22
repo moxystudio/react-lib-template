@@ -80,6 +80,12 @@ $ npm run dev
 
 *Note: Everytime a change is made to the package a rebuild is required to reflect those changes on the demo.*
 
+## FAQ
+
+### I can't override the component's CSS, what's happening?
+
+There is an ongoing [next.js issue](https://github.com/zeit/next.js/issues/10148) about the loading order of modules and global CSS in development mode. This has been fixed in [v9.3.6-canary.0](https://github.com/zeit/next.js/releases/tag/v9.3.6-canary.0), so you can either update `next.js` to a version higher than `v9.3.5`, or simply increase the CSS specificity when overriding component's classes, as we did in the [`demo`](./demo/pages/index.module.css), e.g. having the page or section CSS wrap the component's one.
+
 ## License
 
 Released under the [MIT License](https://www.opensource.org/licenses/mit-license.php).

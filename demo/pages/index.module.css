@@ -1,3 +1,5 @@
-.newComponent {
-    border: 1px solid red;
+.home {
+    & .newComponent {
+        border: 1px solid red;
+    }
 }
