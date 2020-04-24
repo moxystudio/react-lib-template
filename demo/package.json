@@ -18,8 +18,6 @@
   "dependencies": {
     "@moxy/react-lib-template": "file:..",
     "next": "^9.3.5",
-    "onchange": "^6.1.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "onchange": "^6.1.0"
   }
 }
