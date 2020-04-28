@@ -78,7 +78,11 @@ $ npm i
 $ npm run dev
 ```
 
-*Note: Everytime a change is made to the package a rebuild is required to reflect those changes on the demo.*
+*Note: Everytime a change is made to the package a rebuild is required to reflect those changes on the demo. While developing, it may be a good idea do run the `build:watch` script, so you won't need to manually run the build after every change*
+
+```sh
+$ npm run build:watch
+```
 
 ## FAQ
 
