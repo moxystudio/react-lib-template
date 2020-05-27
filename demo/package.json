@@ -10,7 +10,7 @@
     "url": "git+https://github.com/moxystudio/react-lib-template.git"
   },
   "scripts": {
-    "dev": "onchange -i -k  \"../lib\" \"../dist\" -- next",
+    "dev": "onchange -i -k  \"../es\" \"../dist\" -- next",
     "build": "next build",
     "start": "next start",
     "export": "next export"
