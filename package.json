@@ -7,10 +7,7 @@
   "files": [
     "lib",
     "es",
-    "dist",
-    "!**/*.test.js",
-    "!**/__snapshots__",
-    "!**/__mocks__"
+    "dist"
   ],
   "homepage": "https://github.com/moxystudio/react-lib-template#readme",
   "author": "Rui Monteiro <rui.monteiro@moxy.studio>",
