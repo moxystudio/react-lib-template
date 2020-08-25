@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import NewComponent from '../src/NewComponent';
+import NewComponent from './NewComponent';
 
 const defaultProps = {
     children: <span>Hello</span>,
