@@ -10,14 +10,16 @@
     "url": "git+https://github.com/moxystudio/react-lib-template.git"
   },
   "scripts": {
-    "dev": "onchange -i -k  \"../lib\" \"../dist\" -- next",
+    "dev": "onchange -i -k  \"../es\" \"../dist\" -- next",
     "build": "next build",
     "start": "next start",
     "export": "next export"
   },
   "dependencies": {
     "@moxy/react-lib-template": "file:..",
-    "next": "^9.3.5",
+    "next": "^9.3.5"
+  },
+  "devDependencies": {
     "onchange": "^6.1.0"
   }
 }
