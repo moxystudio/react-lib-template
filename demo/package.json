@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@moxy/react-lib-template": "file:..",
-    "next": "^10.0.9"
+    "next": "^11.1.3"
   },
   "devDependencies": {
     "onchange": "^6.1.0"
